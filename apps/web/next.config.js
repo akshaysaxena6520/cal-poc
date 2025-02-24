@@ -193,11 +193,11 @@ const nextConfig = {
   productionBrowserSourceMaps: process.env.SENTRY_DISABLE_CLIENT_SOURCE_MAPS === "0",
   /* We already do type check on GH actions */
   typescript: {
-    ignoreBuildErrors: !!process.env.CI,
+    ignoreBuildErrors: true,
   },
   /* We already do linting on GH actions */
   eslint: {
-    ignoreDuringBuilds: !!process.env.CI,
+    ignoreDuringBuilds: true,
   },
   transpilePackages: [
     "@calcom/app-store",
