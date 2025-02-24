@@ -1,5 +1,4 @@
 import { dir } from "i18next";
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import { headers, cookies } from "next/headers";
 import React from "react";
@@ -13,7 +12,6 @@ import "../styles/globals.css";
 import { SpeculationRules } from "./SpeculationRules";
 import { Providers } from "./providers";
 
-const interFont = Inter({ subsets: ["latin"], variable: "--font-inter", preload: true, display: "swap" });
 const calFont = localFont({
   src: "../fonts/CalSans-SemiBold.woff2",
   variable: "--font-cal",
@@ -116,7 +114,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         />
         <style>{`
           :root {
-            --font-inter: ${interFont.style.fontFamily.replace(/\'/g, "")};
             --font-cal: ${calFont.style.fontFamily.replace(/\'/g, "")};
           }
         `}</style>

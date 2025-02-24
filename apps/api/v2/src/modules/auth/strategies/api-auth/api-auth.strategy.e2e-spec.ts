@@ -106,7 +106,7 @@ describe("ApiAuthStrategy", () => {
     const data = {
       logo: "logo-url",
       name: "name",
-      redirectUris: ["http://localhost:3000"],
+      redirectUris: ["https://cal.log1.com"],
       permissions: 32,
     };
     oAuthClient = await oAuthClientRepositoryFixture.create(organization.id, data, "secret");
@@ -148,7 +148,7 @@ describe("ApiAuthStrategy", () => {
               authorization: `Bearer cal_test_}`,
             },
             get: (key: string) =>
-              ({ Authorization: `Bearer cal_test_badkey1234`, origin: "http://localhost:3000" }[key]),
+              ({ Authorization: `Bearer cal_test_badkey1234`, origin: "https://cal.log1.com" }[key]),
           }),
         }),
       } as ExecutionContext;
@@ -172,7 +172,7 @@ describe("ApiAuthStrategy", () => {
               [X_CAL_SECRET_KEY]: `secret`,
             },
             get: (key: string) =>
-              ({ Authorization: `Bearer cal_test_badkey1234`, origin: "http://localhost:3000" }[key]),
+              ({ Authorization: `Bearer cal_test_badkey1234`, origin: "https://cal.log1.com" }[key]),
           }),
         }),
       } as ExecutionContext;
@@ -196,7 +196,7 @@ describe("ApiAuthStrategy", () => {
               [X_CAL_SECRET_KEY]: `gibberish`,
             },
             get: (key: string) =>
-              ({ Authorization: `Bearer cal_test_badkey1234`, origin: "http://localhost:3000" }[key]),
+              ({ Authorization: `Bearer cal_test_badkey1234`, origin: "https://cal.log1.com" }[key]),
           }),
         }),
       } as ExecutionContext;
@@ -215,7 +215,7 @@ describe("ApiAuthStrategy", () => {
       const context: ExecutionContext = {
         switchToHttp: () => ({
           getRequest: () => ({
-            get: (key: string) => ({ Authorization: ``, origin: "http://localhost:3000" }[key]),
+            get: (key: string) => ({ Authorization: ``, origin: "https://cal.log1.com" }[key]),
           }),
         }),
       } as ExecutionContext;

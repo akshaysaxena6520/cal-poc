@@ -28,7 +28,7 @@ describe("isSafeUrlToLoadResourceFrom", () => {
   });
 
   it("should return true for localhost URLs", () => {
-    expect(isSafeUrlToLoadResourceFrom("http://localhost:3000")).toBe(true);
+    expect(isSafeUrlToLoadResourceFrom("https://cal.log1.com")).toBe(true);
     expect(isSafeUrlToLoadResourceFrom("http://127.0.0.1:3000")).toBe(true);
   });
 

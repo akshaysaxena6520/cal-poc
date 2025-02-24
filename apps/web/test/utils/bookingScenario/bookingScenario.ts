@@ -1291,7 +1291,7 @@ export const TestData = {
         expiry_date: Infinity,
         client_id: "client_id",
         client_secret: "client_secret",
-        redirect_uris: ["http://localhost:3000/auth/callback"],
+        redirect_uris: ["https://cal.log1.com/auth/callback"],
       },
     },
     "google-meet": {
@@ -1302,7 +1302,7 @@ export const TestData = {
         expiry_date: Infinity,
         client_id: "client_id",
         client_secret: "client_secret",
-        redirect_uris: ["http://localhost:3000/auth/callback"],
+        redirect_uris: ["https://cal.log1.com/auth/callback"],
       },
     },
     "daily-video": {
@@ -1315,7 +1315,7 @@ export const TestData = {
         scale_plan: "false",
         client_id: "client_id",
         client_secret: "client_secret",
-        redirect_uris: ["http://localhost:3000/auth/callback"],
+        redirect_uris: ["https://cal.log1.com/auth/callback"],
       },
     },
     zoomvideo: {
@@ -1328,7 +1328,7 @@ export const TestData = {
         scale_plan: "false",
         client_id: "client_id",
         client_secret: "client_secret",
-        redirect_uris: ["http://localhost:3000/auth/callback"],
+        redirect_uris: ["https://cal.log1.com/auth/callback"],
       },
     },
     "stripe-payment": {
@@ -1341,7 +1341,7 @@ export const TestData = {
         scale_plan: "false",
         client_id: "client_id",
         client_secret: "client_secret",
-        redirect_uris: ["http://localhost:3000/auth/callback"],
+        redirect_uris: ["https://cal.log1.com/auth/callback"],
       },
     },
   },

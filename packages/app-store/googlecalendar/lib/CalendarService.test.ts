@@ -20,7 +20,7 @@ vi.mock("./getGoogleAppKeys", () => ({
   getGoogleAppKeys: vi.fn().mockResolvedValue({
     client_id: "xxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com",
     client_secret: "xxxxxxxxxxxxxxxxxx",
-    redirect_uris: ["http://localhost:3000/api/integrations/googlecalendar/callback"],
+    redirect_uris: ["https://cal.log1.com/api/integrations/googlecalendar/callback"],
   }),
 }));
 

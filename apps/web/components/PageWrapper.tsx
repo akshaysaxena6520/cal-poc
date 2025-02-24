@@ -1,7 +1,6 @@
 "use client";
 
 import { DefaultSeo } from "next-seo";
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Head from "next/head";
 import Script from "next/script";
@@ -23,7 +22,6 @@ export interface CalPageWrapper {
   PageWrapper?: AppProps["Component"]["PageWrapper"];
 }
 
-const interFont = Inter({ subsets: ["latin"], variable: "--font-inter", preload: true, display: "swap" });
 const calFont = localFont({
   src: "../fonts/CalSans-SemiBold.woff2",
   variable: "--font-cal",
@@ -89,7 +87,6 @@ function PageWrapper(props: AppProps) {
 
       <style jsx global>{`
         :root {
-          --font-inter: ${interFont.style.fontFamily};
           --font-cal: ${calFont.style.fontFamily};
         }
       `}</style>

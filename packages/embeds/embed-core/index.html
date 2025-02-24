@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Embed Playground</title>
-    <!-- <link rel="prerender" href="http://localhost:3000/free"> -->
+    <!-- <link rel="prerender" href="https://cal.log1.com/free"> -->
     <!-- <script src="./src/embed.ts" type="module"></script> -->
     <script>
       let popupRescheduleUid = null;
@@ -37,7 +37,7 @@
       function addInlineEmbedInNewNamespaceWithoutReload(selector) {
         Cal("init", "withoutReloadNamespace", {
           debug: true,
-          calOrigin: "http://localhost:3000",
+          calOrigin: "https://cal.log1.com",
         });
 
         Cal.ns.withoutReloadNamespace("inline", {
@@ -93,7 +93,7 @@
         function doubleInstallSnippetWithInlineEmbedWithNonDefaultNamespace(selector) {
           Cal("init", "doubleInstall", {
             debug: true,
-            calOrigin: "http://localhost:3000",
+            calOrigin: "https://cal.log1.com",
           });
           Cal.ns.doubleInstall("inline", {
             elementOrSelector: selector,
@@ -105,7 +105,7 @@
           embedSnippet();
           Cal("init", "doubleInstall", {
             debug: true,
-            calOrigin: "http://localhost:3000",
+            calOrigin: "https://cal.log1.com",
           });
           Cal.ns.doubleInstall("inline", {
             elementOrSelector: selector,
@@ -120,7 +120,7 @@
         function doubleInstallSnippetWithInlineEmbed(selector) {
           Cal("init", {
             debug: true,
-            calOrigin: "http://localhost:3000",
+            calOrigin: "https://cal.log1.com",
           });
           Cal("inline", {
             elementOrSelector: selector,
@@ -132,7 +132,7 @@
           embedSnippet();
           Cal("init", {
             debug: true,
-            calOrigin: "http://localhost:3000",
+            calOrigin: "https://cal.log1.com",
           });
           Cal("inline", {
             elementOrSelector: selector,
@@ -146,7 +146,7 @@
         function addTwoInlineEmbedWithTwoDifferentNamespacesWithDifferentInitConfig() {
           Cal("init", "namespace-init-test-1", {
             debug: true,
-            calOrigin: "http://localhost:3000",
+            calOrigin: "https://cal.log1.com",
           });
           Cal("init", "namespace-init-test-2", {
             debug: true,
