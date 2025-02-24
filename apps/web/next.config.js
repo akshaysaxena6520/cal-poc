@@ -183,6 +183,7 @@ const nextConfig = {
     optimizePackageImports: ["@calcom/ui"],
     instrumentationHook: true,
     serverActions: true,
+    optimizeFonts: false,
   },
   i18n: {
     ...i18n,
