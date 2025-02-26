@@ -16,15 +16,15 @@ export const WEBAPP_URL =
   RAILWAY_STATIC_URL ||
   HEROKU_URL ||
   RENDER_URL ||
-  "https://cal.log1.com";
+  "https://www.cal.log1.com";
 
 // OAuth needs to have HTTPS(which is not generally setup locally) and a valid tld(*.local isn't a valid tld)
 // So for development purpose, we would stick to localhost only
-export const WEBAPP_URL_FOR_OAUTH = IS_PRODUCTION || IS_DEV ? WEBAPP_URL : "https://cal.log1.com";
+export const WEBAPP_URL_FOR_OAUTH = IS_PRODUCTION || IS_DEV ? WEBAPP_URL : "https://www.cal.log1.com";
 
 /** @deprecated use `WEBAPP_URL` */
 export const BASE_URL = WEBAPP_URL;
-export const WEBSITE_URL = process.env.NEXT_PUBLIC_WEBSITE_URL || "https://cal.com";
+export const WEBSITE_URL = process.env.NEXT_PUBLIC_WEBSITE_URL || "https://www.cal.com";
 export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Cal.com";
 export const SUPPORT_MAIL_ADDRESS = process.env.NEXT_PUBLIC_SUPPORT_MAIL_ADDRESS || "help@cal.com";
 export const COMPANY_NAME = process.env.NEXT_PUBLIC_COMPANY_NAME || "Cal.com, Inc.";
